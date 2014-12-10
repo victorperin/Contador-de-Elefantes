@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+    <body>	<script>
+elefantes = 1;
+function sleep(callback) {
+  var now = new Date().getTime();
+  while(new Date().getTime() <= now + 1000) {
+  }
+  callback();
+}
+
+
+while(true){
+	sleep(function() {
+		if(elefantes>1){
+			if(elefantes%2!=0){
+				alert(elefantes+" elefantes incomodam muita gente,");
+				elefantes++;
+			}else{
+				incomodam = "";
+				for(var i = 0; i <= elefantes; i++) {
+				incomodam += " incomodam";
+				}
+				alert(elefantes+" elefantes"+incomodam+" muito mais!");
+				elefantes++;
+			}
+		}else{
+			alert(elefantes+" elefante incomoda muita gente,");
+			elefantes++;
+		}
+	});
+}
+ </script></body>
+</html>
